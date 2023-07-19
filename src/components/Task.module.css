@@ -1,0 +1,70 @@
+.task {
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.task p {
+  color: var(--gray-100);
+  font-size: 0.875rem;
+  line-height: 1.18rem;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+p.completedTaskText {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
+
+.deleteTask {
+  background: transparent;
+  border: 0;
+  color: var(--gray-400);
+  cursor: pointer;
+  line-height: 0;
+  border-radius: 2px;
+  transition: 0.2s;
+}
+
+.deleteTask:hover {
+  color: var(--danger);
+}
+
+.checkTaskButton {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+}
+
+.checkTaskButton:focus {
+  box-shadow: 0 0 0 0;
+}
+
+.checkedTaskCircle {
+  color: var(--purple-dark);
+  transition: 0.2s;
+}
+
+.checkedTaskCircle:hover {
+  color: var(--purple);
+}
+
+.uncheckedTaskCircle {
+  color: var(--blue);
+  transition: 0.2s;
+}
+
+.uncheckedTaskCircle:hover {
+  color: var(--blue-dark);
+}
